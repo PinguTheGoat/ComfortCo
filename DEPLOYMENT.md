@@ -54,8 +54,9 @@ ComfortCo is configured to deploy to Cloudflare Pages using the `@cloudflare/vit
 2. **Configure**
    - Framework: "Other"
    - Build Command: `bun run build`
-   - Output Directory: `dist`
+   - Output Directory: `dist/client`
    - Install Command: `bun install`
+   - Ensure all routes rewrite to `/_shell.html` for SPA navigation
 
 3. **Environment Variables**
    - Add variables from `.env.example`
